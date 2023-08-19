@@ -1,0 +1,53 @@
+{
+    "name": "guiigaspar/laravel-zenvia-channel",
+    "description": "Provides Zenvia notification channel for Laravel",
+    "keywords": [
+        "laravel",
+        "zenvia",
+        "notification",
+        "sms"
+    ],
+    "homepage": "https://github.com/guiigaspar/laravel-zenvia-channel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Guilherme Gaspar",
+            "email": "guiigaspar@live.com",
+            "homepage": "https://github.com/guiigaspar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.2|^8.0",
+        "illuminate/notifications": "^7.0 || ^8.0 || ^9.0 || ^10.0",
+        "illuminate/support": "^7.0 || ^8.0 || ^9.0 || ^10.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NotificationChannels\\Zenvia\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NotificationChannels\\Zenvia\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-text --coverage-clover=coverage.clover"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "NotificationChannels\\Zenvia\\ZenviaServiceProvider"
+            ]
+        }
+    }
+}
