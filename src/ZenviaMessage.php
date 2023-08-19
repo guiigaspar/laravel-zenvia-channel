@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Zenvia;
+namespace NotificationChannels\LaravelZenviaChannel;
 
 use Illuminate\Support\Arr;
 

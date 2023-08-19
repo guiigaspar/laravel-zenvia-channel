@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Zenvia;
+namespace NotificationChannels\LaravelZenviaChannel;
 
 use NotificationChannels\Zenvia\Exceptions\CouldNotSendNotification;
 use Illuminate\Notifications\Notification;

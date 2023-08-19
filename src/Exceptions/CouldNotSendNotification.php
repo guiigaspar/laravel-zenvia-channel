@@ -1,6 +1,6 @@
 <?php
 
-namespace NotificationChannels\Zenvia\Exceptions;
+namespace NotificationChannels\LaravelZenviaChannel\Exceptions;
 
 class CouldNotSendNotification extends \Exception
 {
