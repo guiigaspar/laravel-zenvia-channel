@@ -11,7 +11,8 @@ abstract class ZenviaMessage
 
     /**
      * Create a message object.
-     * @param string $content
+     *
+     * @param  string  $content
      * @return static
      */
     public static function create(string $content = '')
@@ -22,7 +23,7 @@ abstract class ZenviaMessage
     /**
      * Create a new message instance.
      *
-     * @param  string $content
+     * @param  string  $content
      */
     public function __construct(string $content = '')
     {
@@ -32,10 +33,10 @@ abstract class ZenviaMessage
     /**
      * Set the message content.
      *
-     * @param  string $content
+     * @param  string  $content
      * @return $this
      */
-    public function content(string $content) : self
+    public function content(string $content): self
     {
         $this->content = $content;
 

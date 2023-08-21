@@ -8,7 +8,7 @@ class ZenviaConfig
     private array $config;
 
     /**
-     * @param array $config
+     * @param  array  $config
      */
     public function __construct(array $config)
     {
