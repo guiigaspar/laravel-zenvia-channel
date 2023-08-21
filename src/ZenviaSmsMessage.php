@@ -2,6 +2,8 @@
 
 namespace NotificationChannels\LaravelZenviaChannel;
 
+use NotificationChannels\LaravelZenviaChannel\Enums\CallbackOptionEnum;
+
 class ZenviaSmsMessage extends ZenviaMessage
 {
     /**
@@ -10,7 +12,7 @@ class ZenviaSmsMessage extends ZenviaMessage
     public $schedule;
 
     /**
-     * @var null|string
+     * @var null|CallbackOptionEnum
      */
     public $callbackOption;
 
@@ -48,7 +50,7 @@ class ZenviaSmsMessage extends ZenviaMessage
      * @param  string $callbackOption
      * @return $this
      */
-    public function callbackOption(string $callbackOption) : self
+    public function callbackOption(CallbackOptionEnum $callbackOption) : self
     {
         $this->callbackOption = $callbackOption;
 
