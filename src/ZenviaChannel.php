@@ -2,13 +2,13 @@
 
 namespace NotificationChannels\LaravelZenviaChannel;
 
+use Exception;
+use GuzzleHttp\Exception\ClientException;
+use GuzzleHttp\Exception\ConnectException;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Notifications\Events\NotificationFailed;
 use Illuminate\Notifications\Notification;
 use NotificationChannels\LaravelZenviaChannel\Exceptions\CouldNotSendNotification;
-use GuzzleHttp\Exception\ClientException;
-use GuzzleHttp\Exception\ConnectException;
-use Exception;
 
 class ZenviaChannel
 {
@@ -25,8 +25,8 @@ class ZenviaChannel
     /**
      * TwilioChannel constructor.
      *
-     * @param Zenvia $zenvia
-     * @param Dispatcher $events
+     * @param  Zenvia  $zenvia
+     * @param  Dispatcher  $events
      */
     public function __construct(Zenvia $zenvia, Dispatcher $events)
     {
@@ -37,8 +37,8 @@ class ZenviaChannel
     /**
      * Send the given notification.
      *
-     * @param mixed $notifiable
-     * @param Notification $notification
+     * @param  mixed  $notifiable
+     * @param  Notification  $notification
      *
      * @return mixed
      * @throws Exception
@@ -76,8 +76,8 @@ class ZenviaChannel
     /**
      * Get the address to send a notification to.
      *
-     * @param mixed $notifiable
-     * @param Notification|null $notification
+     * @param  mixed  $notifiable
+     * @param  Notification|null  $notification
      *
      * @return mixed
      * @throws CouldNotSendNotification
