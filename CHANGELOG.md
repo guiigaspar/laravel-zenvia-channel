@@ -9,3 +9,7 @@ All notable changes to `Zenvia` will be documented in this file
 ## 1.0.1 - 2023-08-21
 
 - First stable version
+
+## 1.0.2 - 2023-08-22
+
+- Handling errors from Zenvia Service
