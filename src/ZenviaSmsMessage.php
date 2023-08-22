@@ -95,5 +95,4 @@ class ZenviaSmsMessage extends ZenviaMessage
 
         return $this;
     }
-
 }

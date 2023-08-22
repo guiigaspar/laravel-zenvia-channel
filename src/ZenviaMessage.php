@@ -11,6 +11,7 @@ abstract class ZenviaMessage
 
     /**
      * Create a message object.
+     *
      * @param  string  $content
      * @return static
      */

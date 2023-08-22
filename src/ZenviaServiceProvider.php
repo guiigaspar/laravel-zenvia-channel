@@ -16,7 +16,6 @@ class ZenviaServiceProvider extends ServiceProvider implements DeferrableProvide
      */
     public function boot()
     {
-
     }
 
     /**

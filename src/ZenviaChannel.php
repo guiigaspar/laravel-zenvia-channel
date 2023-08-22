@@ -39,8 +39,8 @@ class ZenviaChannel
      *
      * @param  mixed  $notifiable
      * @param  Notification  $notification
-     *
      * @return mixed
+     *
      * @throws Exception
      */
     public function send($notifiable, Notification $notification)
@@ -78,8 +78,8 @@ class ZenviaChannel
      *
      * @param  mixed  $notifiable
      * @param  Notification|null  $notification
-     *
      * @return mixed
+     *
      * @throws CouldNotSendNotification
      */
     protected function getTo($notifiable, $notification = null)
