@@ -4,7 +4,7 @@
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Total Downloads](https://img.shields.io/packagist/dt/guiigaspar/laravel-zenvia-channel.svg?style=flat-square)](https://packagist.org/packages/guiigaspar/laravel-zenvia-channel)
 
-This package makes it easy to send notifications using [Zenvia](https://zenviasms.docs.apiary.io) with Laravel 7.x, 8.x, 9.x, 10.x
+This package makes it easy to send notifications using [Zenvia](https://zenviasms.docs.apiary.io) with Laravel 7.x, 8.x, 9.x, 10.x, 11.x
 
 ## Contents
 
